@@ -1,14 +1,14 @@
 import React from "react";
 
 // --- Stock media helpers (real, on-topic photos & video) -------------------
-const PHOTO = (i, q = "coffee") =>
+const PHOTO = (i, q = "coffee") =
   `https://echols.ai/api/stock?type=photo&q=${q}&i=${i}`;
 const VIDEO = (q = "coffee") => `https://echols.ai/api/stock?type=video&q=${q}`;
 
 // --- Small presentational components -----------------------------------------
 const Eyebrow = ({ children, className = "" }) => (
   <div
-    className={`uppercase tracking-[0.32em] text-[0.7rem] font-semibold text-[#c9w]/80 ${className}`}
+    className={`uppercase tracking-[0.32em] text-[0.7rem] font-semibold text-[#c4w]/80 ${className}`}
   >
     {children}
   </div>
@@ -38,7 +38,7 @@ export default function App() {
       <div className="sticky top-0 z-30 backdrop-blur-md bg-[#070705]/70 border-b border-[#f8f3]/10">
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           <div className="font-[Fraunces] text-[1.4rem] tracking-tight">
-            <span className="text-[#c4w]">Roastery</span
+            <span className="text-[#c4w]">Roastery</span>
             <span className="text-[#f8f3]/60"> · Est. 2019</span>
           </div>
           <nav className="flex gap-6 text-[0.9rem] uppercase tracking-[0.2em] text-[#f8f3]/70">
@@ -137,8 +137,8 @@ export default function App() {
           </div>
           <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { i: 2, name: "Ethiopian · Arabica", note: "Bright, floral, high-chirp" },
-              { i: 3, name: "Colombian · Supreme", note: "Deep body, low-acidity" },
+              { i: 2, name: "Ethiopian · Arabica", note: "Bright, floral, high chirp" },
+              { i: 3, name: "Colombian · Supreme", note: "Deep body, low acidity" },
               { i: 4, name: "Sumatran · Robusta", note: "Earthy, full-bodied" },
               { i: 5, name: "House Blend · v7", note: "Balanced, seasonal roast" },
             ].map((b) => (
@@ -161,7 +161,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* VISIT-US CTA --------------------------------------------------------*/}
+      {/* VISIT US CTA --------------------------------------------------------*/}
       <section className="bg-[#080806] py-24">
         <div className="max-w-6xl mx-auto px-6 text-center">
           <Eyebrow>Visit us</Eyebrow>
